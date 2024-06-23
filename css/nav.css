@@ -2,6 +2,9 @@
     border: 1px solid white;
     border-radius: 8px;
     margin: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav h3 {
@@ -14,10 +17,6 @@ nav h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
-
-#favourites {
-    border-top: 1px solid white;
 }
 
 .container-select-search {
@@ -33,25 +32,27 @@ select {
 }
 
 
-.search-input,
+
 .search-button,
 .add-favorites,
-.remove-favorites,
+.remove-favorites {
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #0065a3;
+    color: white;
+}
+
+
+
 .search-input,
 #favourites-input {
     font-weight: 500;
     padding: 8px;
     border-radius: 8px;
-    border: 1px solid gray;
     text-align: left;
     cursor: pointer;
-}
-
-.search-input,
-#favourites-input {
     width: 180px;
-}
-
-.display {
-    display: none;
 }
