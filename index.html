@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Sicily Sun</title>
+</head>
+
+<body>
+    <!-- HEADING -->
+    <div class="heading">
+        <img src="./images/icon.png" class="sun-icon" alt="sole">
+        <div class="feedback-error" style="display: none; color: red;"></div>
+        <div class="feedback-success" style="display: none; color: green red;"></div>
+
+        <div class="date-position">
+            <h1>SICILY SUN</h1>
+            <p class="date"></p>
+        </div>
+    </div>
+    <!-- END HEADING -->
+
+    <!-- SELECT SECTION -->
+    <nav class="nav-section">
+        <div class="select-section">
+            <h3>Sezione ricerca</h3>
+            <div class="container-select-search">
+                <select id="provinces" name="provinces">
+                    <option value="">Seleziona una provincia siciliana</option>
+                    <option value="Agrigento">Agrigento</option>
+                    <option value="Caltanissetta">Caltanissetta</option>
+                    <option value="Catania">Catania</option>
+                    <option value="Enna">Enna</option>
+                    <option value="Messina">Messina</option>
+                    <option value="Palermo">Palermo</option>
+                    <option value="Ragusa">Ragusa</option>
+                    <option value="Siracusa">Siracusa</option>
+                    <option value="Trapani">Trapani</option>
+                </select>
+                <form id="search-location">
+                    <input type="text" placeholder="Inserisci qui la località" class="search-input">
+                    <button type="submit" class="search-button">Cerca</button>
+                </form>
+            </div>
+        </div>
+        <form id="favourites">
+            <h3>Sezione preferiti</h3>
+            <div class="container-favourites">
+                <input type="text" name="favourites" id="favourites-input" placeholder="Inserisci qui la località">
+                <button class="add-favorites">Aggiungi</button>
+                <button class="remove-favorites">Rimuovi</button>
+            </div>
+        </form>
+    </nav>
+    <!-- END SELECT SECTION -->
+    <div class="favorites-list-container">
+        <h2>I tuoi preferiti</h2>
+        <ul id="favorites-list"></ul>
+    </div>
+    <ul id="favorites-list"></ul>
+    <!-- SEA SECTION -->
+    <div class="container-card"></div>
+    <h2 class="sicily-sea">SICILY SEA</h2>
+    <div class="container-sea"></div>
+    <!-- END SEA SECTION -->
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 16px;
+}
+
+.sun-icon {
+    position: absolute;
+    left: 24px;
+    width: 50px;
+}
+
+h1,
+h2 {
+    color: #ffe15a;
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.date-position {
+    display: flex;
+    flex-direction: column;
+}
+
+.date {
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+}

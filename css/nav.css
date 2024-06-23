@@ -1,0 +1,57 @@
+.nav-section {
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 16px;
+}
+
+nav h3 {
+    color: #ffe15a;
+}
+
+.select-section,
+#favourites {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#favourites {
+    border-top: 1px solid white;
+}
+
+.container-select-search {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+
+select {
+    border-radius: 8px;
+    border-right: 8px solid transparent;
+}
+
+
+.search-input,
+.search-button,
+.add-favorites,
+.remove-favorites,
+.search-input,
+#favourites-input {
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    text-align: left;
+    cursor: pointer;
+}
+
+.search-input,
+#favourites-input {
+    width: 180px;
+}
+
+.display {
+    display: none;
+}
